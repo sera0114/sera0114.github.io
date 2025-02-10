@@ -1,0 +1,425 @@
+/* 
+  font-family: "Roboto", serif;
+
+    font-family: 'Pretendard-Regular'; */
+
+body {
+    background-image: url(../images/subbackground.jpg);
+    font-family: "Roboto", 'Pretendard-Regular', serif;
+    color: #141414;
+    overflow-x: hidden;
+}
+
+/* header */
+#header {
+    font-family: "Roboto", 'Pretendard-Regular', serif;
+    width: 1200px;
+    margin: auto;
+}
+
+#header > div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 30px 0;
+}
+
+#header > div > div {
+    position: absolute;
+    right: 0;
+}
+
+#header > div > div > button {
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    padding: 30px 20px 0 0;
+    margin: 0;
+    cursor: pointer; 
+    font-size: 15px;
+}
+
+#header > div > div > button:first-child::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #141414;
+    position: absolute;
+    top: 34px;
+    left: 53px;
+}
+
+#header > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header > ul > li {
+    padding: 30px 50px 40px 50px;
+}
+
+#header > ul > li > a {
+    text-decoration: none;
+    color: #141414;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#header > ul > li > a:hover {
+    font-weight: 600;
+}
+
+
+/* nav */
+#nav {
+    width: 1200px;
+    margin: auto;
+}
+
+#nav > h2 {
+    text-align: center;
+    margin: 50px 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#nav > ul {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #141414;
+}
+
+#nav > ul > li {
+    padding: 50px 40px 40px 40px;
+}
+
+#nav > ul > li:hover {
+    font-weight: 600;
+}
+
+#nav > ul > li > a {
+    text-decoration: none;
+    color: #141414;
+    font-size: 1.2rem;
+}
+
+
+/* cultureclub */
+#cultureclub {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+#cultureclub > div:nth-of-type(1) > span {
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#cultureclub > div:nth-of-type(1) > img {
+    border-radius: 50%;
+}
+
+#cultureclub > div:nth-of-type(2) > h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#cultureclub > div:nth-of-type(2) > ul {
+    background-color: #f8f3df;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+#cultureclub > div:nth-of-type(2) > ul > li {
+    margin: 20px;
+    line-height: 1.8rem;
+    font-size: 18px;
+}
+
+#cultureclub > div:nth-of-type(2) > ul > li:nth-of-type(1) > span {
+    display: block;
+    padding-left: 50px;
+    font-size: 16px;
+}
+
+#cultureclub > div:nth-of-type(2) > ul > li:nth-of-type(5) {
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#cultureclub > div:nth-of-type(3) {
+    width: 100%;
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#cultureclub > div:nth-of-type(3) > a {
+    display: block;
+    text-decoration: none;
+    color: #141414;
+    margin-right: 20px;
+}
+
+#cultureclub > div:nth-of-type(3) > a:first-child {
+    border: 2px solid #f4cd0b;
+    border-radius: 50px;
+    padding: 10px 30px;
+    position: relative;
+}
+
+#cultureclub > div:nth-of-type(3) > a:first-child::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #f4cd0b;
+    position: absolute;
+    top: 17px;
+    left: 133px;
+}
+
+#cultureclub > div:nth-of-type(3) > a:last-child {
+    background-color: #f4cd0b;
+    border: 2px solid #f4cd0b;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+/* teacher */
+#teacher {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+#teacher > div > img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#teacher > div > ul {
+    margin: 50px 0;
+}
+
+#teacher > div > ul:nth-of-type(1) {
+    margin-bottom: 100px;
+}
+
+#teacher > div > ul > li {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#teacher > div > ul > li:first-child {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#teacher > div > ul > li > span {
+    text-align: right;
+    padding-left: 70px;
+}
+
+#teacher > ol {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: 120px;
+}
+
+#teacher > ol > li {
+    padding: 0 0 70px 50px;
+    position: relative;
+}
+
+#teacher > ol > li::before {
+    content: "";
+    display: inline-block;
+    background-color: #141414;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#teacher > ol > li::after {
+    content: "";
+    display: inline-block;
+    background-color: #141414;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 7px;
+    top: 15px;
+}
+
+#teacher > ol > li:last-child::after {
+    display: none;
+}
+
+#teacher > ol > li > span{
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+/* class */
+#class {
+    width: 1200px;
+    margin: auto;
+    padding-top: 80px;
+
+}
+
+#class > h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px;
+}
+
+#class > ul {
+    display: flex;
+    position: relative;
+    left: -33%;
+    column-gap: 30px;
+}
+
+#class > ul > li {
+    width: 306px;
+    height: 197px;
+    position: relative;
+}
+
+#class > ul > li > a {
+    display: block;
+    text-decoration: none;
+    color: #141414;
+}
+
+#class > ul > li > a > div {
+    width: 100%;
+    height: 100%;
+    background: rgba(95, 90, 87, 0.7);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#class > ul:nth-of-type(1) > li > a > div > span {
+    display: block;
+    color: #f9f9f9;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    left: 0;
+}
+
+#class > ul:nth-of-type(2) > li > a > div > span {
+    display: block;
+    color: #f9f9f9;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+    top: 80px;
+    left: 0;
+}
+
+#class > div {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#class > div > .bullet1 {
+
+    background-color: #f5da52;
+    width: 65px;
+    height: 20px;
+    border: none;
+    border-radius: 50px;
+    padding: 0;
+    margin: 10px 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#class > div > .bullet2 {
+    background-color: #5f5a57;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    margin: 10px 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#class button span {
+    display: inline-block;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    border: 0;
+    margin: 10px;
+}
+
+#class ul .hidden {
+    display: none;
+}
+
+
+/* footer */
+#footer {
+    width: 1200px;
+    margin: auto;
+    padding: 15px;
+    line-height: 25px;
+    font-family: "Roboto", 'Pretendard-Regular', serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-self: baseline;
+}
+
+#footer > div > ul:first-child {
+    padding-bottom: 20px;
+}
+
+#footer > div > ul:nth-of-type(2) > li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#footer > div > ul:nth-of-type(2) > li > a {
+    text-decoration: none;
+    color: #141414;
+}
+
+#footer > ul:last-child {
+    text-align: right;
+    align-content: end;
+}

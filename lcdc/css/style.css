@@ -1,0 +1,296 @@
+
+body { 
+    padding-top: 72px;
+    background-color: #f3f3f3;
+}
+/* header */
+
+#header {
+    background-color: #f3f3f3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 1px 1px 1px 1px #a1a1a1;
+}
+
+#header > div {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header > div > img {
+    padding: 15px;
+}
+#header > div > ul {
+    display: flex;
+}
+
+#header > div > ul > li > a {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    font-size: 1.3rem;
+    font-family: "Noto Sans KR", serif;
+    font-weight: 600;
+    padding: 24px 20px;
+}
+
+/* banner */
+#banner {
+  height: 650px;
+  overflow: hidden;
+  background-image: url(../images/main.jpg);
+}
+#banner > div {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+
+#banner > div > h1 {
+  color: #f3f3f3;
+  font-family: "Oswald", serif;
+  font-weight: 900;
+  font-size: 9rem;
+  z-index: 1;
+  position: absolute;
+  bottom: -7px;
+  left: 93px;
+}
+
+/* floor */
+#floor {
+  height: 1044px;
+  padding-top: 70px;
+  overflow: hidden;
+}
+
+#floor > div {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+
+#floor > div > svg {
+  position: absolute;
+  left: -41%;
+  z-index: -1;
+}
+
+#floor > div > div {
+  text-align: right;
+}
+
+#floor > div > p {
+  color: #333333;
+  font-family: "Noto Sans KR", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 114px;
+  left: 233px;
+}
+
+#guide {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  position: absolute;
+  top: 308px;
+  left: 238px;
+}
+
+#guide > li:nth-of-type(1){
+  font-size: 2rem;
+  padding: 20px;
+  color: #0c2407;
+  rotate: -14deg;
+  margin-bottom: 52px;
+}
+
+#guide > li:nth-of-type(2){
+  rotate: -7deg;
+  padding-left: 134px;
+  margin-bottom: 62px;
+}
+
+#guide > li:nth-of-type(3){
+  rotate: -7deg;
+  margin-bottom: 56px;
+}
+
+#guide > li:nth-of-type(4){
+  padding-left: 180px;
+  margin-bottom: 70px;
+}
+
+#guide > li > a {
+  font-size: 1.3rem;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #333333;
+}
+
+#guide > li:not(:first-child) > a:hover {
+  color: #ef5e09;
+}
+
+#guide > li.active > a {
+  color: #ef5e09;
+}
+
+#floor > div > div {
+  position: absolute;
+  top: 363px;
+  right: 28px;
+}
+
+#photo {
+  width: 428px;
+  height: 506px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+#floor > div > div > a {
+  color: #d6ece2;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #0c2407;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+/* popup */
+#popup {
+  height: 1000px;
+  overflow: hidden;
+}
+
+#popup > div {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+#popup > div > p {
+  background-color: #0c2407;
+  border-radius: 50%;
+  padding: 15px 40px;
+  color: #d6ece2;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Oswald", serif;
+  position: absolute;
+  left: 494px;
+  top: 95px;
+}
+
+#popup > div > div:not(:first-child) {
+  font-family: "Oswald", serif;
+  color: #333333;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 50px;
+  text-align: center;
+}
+
+#popup > div > div:not(:first-child) > div > p:first-child{
+  font-size: 1.8rem;
+  line-height: 80px;
+  font-weight: 700;
+}
+
+#rains {
+  padding-top: 200px;
+}
+
+#popup > div > img {
+position: absolute;
+right: -145px;
+bottom: -100px;
+z-index: -2;
+width: 350px;
+animation: rotate_image 15s linear infinite;
+transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+/* footer */
+#footer {
+  background-color: #cbd0ba;
+  padding: 10px;
+  font-family: "Oswald", "Noto Sans KR", serif;
+  overflow: hidden;
+}
+
+#footer > div {
+  width: 1200px;
+  margin: auto;
+}
+
+#footer > div > img {
+  display: block;
+  margin: auto;
+  padding: 20px 0 35px 0;
+}
+
+#footer > div > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer > div > div > p:first-child{
+  line-height: 25px;
+}
+
+#footer > div > div > p:last-child{
+  padding-top: 30px;
+}
+
+#footer > div > div > div {
+  padding-top: 18px;
+}
+
+#footer > div > div > div > button {
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 30px 20px 0 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+#footer > div > div > div > button:first-child {
+  background-image: url(../images/email.png);
+}
+
+#footer > div > div > div > button:last-child {
+  background-image: url(../images/instagram.png);
+}
+
+#footer > div > div > div > button > span {
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  clip-path: inset(50%);
+  border: 0;
+}

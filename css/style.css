@@ -1,0 +1,922 @@
+
+body{
+    font-family: 'SeoulHangangM','spectral',serif;
+    color: #333333;
+}
+
+.page {
+    overflow: hidden;
+}
+
+/* 1. 로딩 페이지 */
+
+#loading {
+    height: 100vh;
+    background-color: #788fa6;
+}
+
+#loading > div {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding-top: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+#loading > div > img {
+    display: block;
+    margin: auto;
+    height: 100%;
+}
+
+#loading > div > p:nth-of-type(1) {
+    color: #788fa6;
+    position: absolute;
+    top: 37%;
+    left: 14%;
+    font-size: 2rem;
+    font-weight: 700;
+    rotate: -44deg;
+}
+
+#loading > div > p:nth-of-type(2) {
+    color: #f6f6f6;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    bottom: 10%;
+    right: 15%
+}
+
+/* 2. 소개 페이지 */
+
+#introduce {
+    height: 100vh;
+    background-color: #bbcee3;
+    justify-content: center;
+    text-align: center;
+}
+
+#introduce > div {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+#introduce > div > header {
+    display: flex;
+    justify-content: center;
+    padding: 3% 0 2% 0;
+    position: relative;
+}
+
+#introduce > div > header > ul {
+    display: flex;
+}
+
+#introduce > div > header > ul > li > a {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding: 4px 20px;
+    position: relative;
+}
+
+#introduce > div > header > ul > li > a::after{
+    content: "";
+    position: absolute;
+    left: 18px;
+    bottom: -2px;
+    height: 2px;
+    width: 75%;
+    background-color: #333333;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+
+#introduce > div > header > ul > li > a:hover::after{
+    transform: scaleX(1);
+}
+
+
+#introduce > div > header > div {
+    position: absolute;
+    right: 0;
+}
+
+#introduce > div > header > div > button{
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+#introduce > div > header > div > button:first-child{
+    background-image: url(../images/2-login.png);
+}
+
+#introduce > div > header > div > button:last-child{
+    background-image: url(../images/2-like.png);
+}
+
+
+#introduce > div > header > div > button > span{
+    display: inline-block;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    clip-path: inset(50%);
+    border: 0;
+}
+
+#introduce > div > div {
+    background-image: url(../images/2-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#introduce> div > div > h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 2%;
+}
+
+#introduce > div > div > img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#introduce > div > div > p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2%;
+    line-height: 2rem;
+}
+
+
+/* 3. 프로필 페이지 */
+
+#profilepage {
+    height: 100vh;
+    background-color: #f6f6f6;
+}
+
+#profilepage > div {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    row-gap: 40px;
+    padding-top: 40px;
+    position: relative;
+}
+
+#profilepage > div div {
+    width: 500px;
+}
+ 
+#profilepage > div h2 {
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+#profile::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 420px;
+    background-color: #c6c6c6;
+    position: absolute;
+    top: 20px;
+    left: 600px;
+}
+
+#character::after {
+    content: "";
+    display: block;
+    width: 580px;
+    height: 2px;
+    background-color: #c6c6c6;
+    position: absolute;
+    top: 447px;
+    right: 10px;
+}
+
+#favorite::after {
+    content: "";
+    display: block;
+    width: 580px;
+    height: 2px;
+    background-color: #c6c6c6;
+    position: absolute;
+    top: 447px;
+    left: 10px;
+}
+
+#career::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 440px;
+    background-color: #c6c6c6;
+    position: absolute;
+    bottom: 10px;
+    right: 598px;
+}
+
+
+#profile > ul {
+    padding-left: 10%;
+}
+
+#profile > ul > li {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#profile > ul > li > span {
+    min-width: 35%;
+    color: #788fa6;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#character > ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+}
+
+#character > ul > li {
+    width: 25%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 10px;
+    padding: 3px;
+    border: 2.5px solid #788fa6;
+    border-radius: 50px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#character > ul > .right {
+    margin-right: 150px;
+}
+
+#character > ul > .left {
+    margin-left: 32%;
+}
+
+#favorite > ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+#favorite > ul > li > img {
+    width: 80%;
+    height: 80%;
+    border: 4px solid #788fa6;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+#favorite > ul > li > span {
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display:block;
+    margin: 2%;
+    text-align: center;
+}
+
+#career > ul {
+    padding-left: 10%;
+}
+
+#career > ul > li {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5%;
+    position: relative;
+    left: 30%;
+}
+
+#career > ul > li > span {
+    color: #788fa6;
+    font-weight: 700;
+    font-size: 1.5rem;
+    position: absolute;
+    left: -20%;
+}
+
+#career > ul > li:nth-child(1)::after {
+    content: "";
+    display: block;
+    width: 2.5px;
+    height: 14px;
+    background-color: #788fa6;
+    position: absolute;
+    top: 25px;
+    left: -66px;
+}
+
+#career > ul > li:nth-child(2)::after {
+    content: "";
+    display: block;
+    width: 2.5px;
+    height: 57px;
+    background-color: #788fa6;
+    position: absolute;
+    top: 24px;
+    left: -66px;
+}
+
+#career > ul > li:nth-child(4)::after {
+    content: "";
+    display: block;
+    width: 2.5px;
+    height: 14px;
+    background-color: #788fa6;
+    position: absolute;
+    top: 25px;
+    left: -66px;
+}
+
+#career > ul > li:nth-child(5)::after {
+    content: "";
+    display: block;
+    width: 2.5px;
+    height: 160px;
+    background-color: #788fa6;
+    position: absolute;
+    top: 25px;
+    left: -66px;
+}
+
+
+/* 스킬세트 페이지 */
+#skillset {
+    height: 100vh;
+    background-image: url(../images/4-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#skillset > div {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+#skill,#certificate {
+    width: 40%;
+}
+
+#skillset h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 20% 0 10% 0;
+}
+
+#skill::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 2px;
+    height: 750px;
+    background-color: #c6c6c6;
+    position: absolute;
+    top: 100px;
+    left: 580px;
+}
+
+#certificate::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 2px;
+    height: 750px;
+    background-color: #c6c6c6;
+    position: absolute;
+    top: 100px;
+    right : 580px;
+}
+
+#skill > ul > li > span {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#skill > ul > li > ul {
+    margin: 3% 0 4% 10%;
+}
+
+#skill > ul > li > ul > li {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #788fa6;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+    box-sizing: border-box;
+}
+
+#certificate > ul {
+    text-align: center;
+    margin-bottom: 6%;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#certificate > ul >li {
+    line-height: 160%;
+}
+
+/* 5. 작업물 페이지 */
+
+#work {
+    height: 100vh;
+    background-color: #f6f6f6;
+}
+
+#work > div {
+    width: 1200px;
+    margin: auto;
+}
+
+#work > div > h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    padding: 1%;
+}
+
+#work > div > #tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 1% 0 2% 0;
+}
+
+#work > div > #tab-buttons > li > a {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding: 4px 20px;
+    position: relative;
+}
+
+#work > div > #tab-buttons > li:first-child > a::after{
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: -2px;
+    height: 2px;
+    width: 70%;
+    background-color: #333333;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+
+#work > div > #tab-buttons > li:not(:first-child) > a::after{
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: -2px;
+    height: 2px;
+    width: 80%;
+    background-color: #333333;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+
+#work > div > #tab-buttons > li > a.on::after {
+    transform: scaleX(1);
+}
+
+#work > div > #tab-buttons > li > a:hover::after{
+    transform: scaleX(1);
+}
+
+#work > div > #all {
+    width: 1100px;
+    margin: auto;
+    flex-flow: row wrap;
+    gap: 25px;
+}
+
+#work > div > #all > ul {
+    overflow: hidden;
+}
+
+#work > div > #all > ul > li:nth-child(2){
+    display: none;
+}
+
+#work > div > #all > ul:nth-child(1){
+    width: 325px;
+    height: 270px;
+}
+
+#all > ul:nth-child(1) > li > img {
+    width: 325px;
+    height: 270px;
+}
+
+#work > div > #all > ul:nth-child(2){
+    width: 400px;
+    height: 270px;
+}
+
+#all > ul:nth-child(2) > li > img {
+    width: 400px;
+    height: 270px;
+}
+
+#work > div > #all > ul:nth-child(3){
+    width: 325px;
+    height: 270px;
+}
+
+#all > ul:nth-child(3) > li > img {
+    width: 325px;
+    height: 270px;
+}
+
+#work > div > #all > div:nth-of-type(1) {
+    width: 750px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#work > div > #all > div > #slide {
+    width: 400%;
+}
+
+#work > div > #all > div > #slide > li {
+    display: flex;
+    width: 25%;
+}
+
+#work > div > #all > div > #slide > li > img {
+    display: block;
+    width: 100%;
+}
+
+#work > div > #all > ul:nth-child(5){
+    width: 325px;
+    height: 400px;
+}
+
+#all > ul:nth-child(5) > li > img {
+    width: 325px;
+    height: 400px;
+}
+
+#work > div > #all > div:nth-of-type(2) {
+    margin: 10px auto;
+    text-align: center;
+}
+
+#work > div > #all > div:last-child > button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    margin: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#work > div > #all > div:last-child > button:first-child {
+    background-color: #788fa6;
+}
+
+
+#work > div > #all > div:last-child > button:last-child {
+    background-color: #bbcee3;
+}
+
+#work > div > #all > div:last-child > button > span {
+    display: inline-block;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    clip-path: inset(50%);
+    border: 0;
+    margin: 10px;
+}
+
+/* 포토샵 */
+
+#work > div > #photoshop {
+    width: 1100px;
+    margin: auto;
+    flex-flow: row wrap;
+    gap: 25px;
+}
+
+#work >  div > #photoshop > img:nth-of-type(1){
+    width: 325px;
+    height: 270px;
+}
+
+#work >  div > #photoshop > img:nth-of-type(2){
+    width: 400px;
+    height: 270px;
+}
+
+#work >  div > #photoshop > img:nth-of-type(3){
+    width: 325px;
+    height: 270px;
+}
+
+#work > div > #photoshop > div {
+    width: 750px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#work >  div > #photoshop > div > #slide2 {
+    width: 200%;
+}
+
+#work >  div > #photoshop > div > #slide2 > li {
+    display: flex;
+    width: 50%;
+}
+
+#work >  div > #photoshop > div > #slide2 > li > img {
+    display: block;
+    width: 100%;
+}
+
+#work >  div > #photoshop > img:nth-of-type(4){
+    width: 325px;
+    height: 400px;
+}
+
+/* 일러스트 */
+
+#work >  div > #illustrator {
+    width: 1100px;
+    margin: auto;
+    flex-flow: row wrap;
+    gap: 25px;
+}
+
+#work > div > #illustrator > img:nth-of-type(1){
+    width: 325px;
+    height: 270px;
+}
+
+#work >  div > #illustrator > img:nth-of-type(2){
+    width: 400px;
+    height: 270px;
+}
+
+#work >  div > #illustrator > img:nth-of-type(3){
+    width: 325px;
+    height: 270px;
+}
+
+#work > div > #illustrator > div {
+    width: 750px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#work >  div > #illustrator > div > #slide3 {
+    width: 200%;
+}
+
+#work >  div > #illustrator > div > #slide3 > li {
+    display: flex;
+    width: 50%;
+}
+
+#work >  div > #illustrator > div > #slide3 > li > img {
+    display: block;
+    width: 100%;
+}
+
+#work >  div > #illustrator > img:nth-of-type(4){
+    width: 325px;
+    height: 400px;
+}
+
+/* 6. 포트폴리오 소개 */
+
+#portfolio {
+    height: 100vh;
+    background-color: #bccee4;
+    background-image: url(../images/6-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+}
+
+#portfolio > div {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+#portfolio > div > div {
+    position: absolute;
+    top: 44%;
+    left: 27%;
+}
+
+#portfolio > div > div > h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    padding: 1%;
+}
+
+#portfolio > div > div > h2::after{
+    content: "";
+    display: block;
+    clear: both;
+    width: 500px;
+    height: 2px;
+    background-color: #333333;
+    margin: 20px;
+}
+
+#portfolio > div > div > div {
+    position: absolute;
+    top: 109%;
+    left: 29%;
+}
+
+#portfolio > div > div > div > p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* 7. 리브랜딩1 : LCDC SEOUL */ 
+
+#lcdcseoul {
+    height: 100vh;
+    background-color: #f6f6f6;
+}
+
+#lcdcseoul > div {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+#lcdcseoul > div > a {
+    width: 50%;
+}
+
+#lcdcseoul > div > a > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#lcdcseoul > div > div {
+    background-color: #262f1a;
+    width: 50%;
+}
+
+#lcdcseoul > div > div > h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #f6f6f6;
+    text-align: center;
+    margin: 15%;
+}
+
+#lcdcseoul > div > div > h3 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #f6f6f6;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+#lcdcseoul > div > div > p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f6f6f6;
+    text-align: center;
+}
+
+#lcdcseoul > div > div > p:nth-of-type(1){
+    margin-bottom: 60px;
+}
+
+#lcdcseoul > div > div > p:nth-of-type(2){
+    margin-bottom: 300px;
+}
+
+#lcdcseoul > div > div > p:nth-of-type(3){
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+#lcdcseoul > div > div > p:nth-of-type(4){
+    margin-bottom: 60px;
+}
+
+/* 8. 리브랜딩2 : EMART */
+
+#emart {
+    height: 100vh;
+    background-color: #f6f6f6;
+}
+
+#emart > div {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#emart > div > a {
+    width: 50%;
+}
+
+#emart > div > a > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#emart > div > div{
+    width: 50%;
+    background-color: #f0db72;
+}
+
+#emart > div > div > h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #333333;
+    text-align: center;
+    margin: 15%;
+}
+
+#emart > div > div > h3 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+#emart > div > div > p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+}
+
+#emart > div > div > p:nth-of-type(1){
+    margin-bottom: 60px;
+}
+
+#emart > div > div > p:nth-of-type(2){
+    margin-bottom: 300px;
+}
+
+#emart > div > div > p:nth-of-type(3){
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+#emart > div > div > p:nth-of-type(4){
+    margin-bottom: 60px;
+}

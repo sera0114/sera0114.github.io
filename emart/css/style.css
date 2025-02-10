@@ -1,0 +1,664 @@
+/* 
+  font-family: "Roboto", serif;
+
+    font-family: 'Pretendard-Regular'; */
+
+body {
+    background-color: #f9f9f9;
+    color: #141414;
+    overflow-x: hidden;
+}
+
+/* header */
+#header {
+    font-family: "Roboto", 'Pretendard-Regular', serif;
+    width: 1200px;
+    margin: auto;
+}
+
+#header > div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 30px 0;
+}
+
+#header > div > div {
+    position: absolute;
+    right: 0;
+}
+
+#header > div > div > button {
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    padding: 30px 20px 0 0;
+    margin: 0;
+    cursor: pointer; 
+    font-size: 15px;
+}
+
+#header > div > div > button:first-child::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #141414;
+    position: absolute;
+    top: 34px;
+    left: 53px;
+}
+
+#header > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header > ul > li {
+    padding: 30px 50px 40px 50px;
+}
+
+#header > ul > li > a {
+    text-decoration: none;
+    color: #141414;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#header > ul > li > a:hover {
+    font-weight: 600;
+}
+
+
+/* banner */
+#banner {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+#banner > button {
+    background-color: #f5f5f5;
+    border: none;
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    color: #141414;
+    cursor: pointer;
+}
+
+#banner > button:first-child {
+    position: absolute;
+    left: -80px;
+    top: 300px;
+}
+
+#banner > button:nth-of-type(2) {
+    position: absolute;
+    right: -80px;
+    top: 300px;
+}
+
+#banner > ul {
+    display: flex;
+    width: 200%;
+}
+
+#banner > ul > li {
+    display: none;
+    width: 50%;
+}
+
+#banner > ul > li:first-child {
+    position: relative;
+}
+
+#banner > ul > li:first-child > a {
+    font-family: "Roboto", 'Pretendard-Regular', serif;
+    text-decoration: none;
+    color: #141414;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #f8f1d5;
+    display: block;
+    width: 300px;
+    height: 45px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 12px;
+    z-index: 1;
+    position: absolute;
+    bottom: 150px;
+    left: 450px;
+    box-sizing: border-box;
+}
+
+#banner > ul > li:last-child{
+    position: relative;
+}
+
+#banner > ul > .active {
+    display: block;
+}
+
+#banner > ul > li:last-child > a {
+    font-family: 'Pretendard-Regular', serif;
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid #f8f8f8;
+    display: block;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    z-index: 1;
+    position: absolute;
+    bottom: 130px;
+    right: 220px;
+    box-sizing: border-box;
+}
+
+#banner > div {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#banner > div > button:first-child{
+    background-color: #f5da52;
+    width: 65px;
+    height: 20px;
+    border: none;
+    border-radius: 50px;
+    padding: 0;
+    margin: 10px 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#banner > div > button:last-child{
+    background-color: #5f5a57;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    margin: 10px 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#banner > div > button > span {
+    display: inline-block;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    border: 0;
+    margin: 10px;
+}
+
+/* cardevent */
+#cardevent {
+    width: 1200px;
+    margin: auto;
+    font-family: "Roboto", 'Pretendard-Regular', serif;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#cardevent > h2 {
+    display: inline-block;
+    color: #141414;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 60px 10px 10px 10px;
+    border-bottom: 1px solid #141414;
+}
+
+#cardevent > p {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#cardevent > button {
+    background-color: #f5f5f5;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    color: #141414;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#cardevent > button:nth-of-type(1) {
+    position: absolute;
+    bottom: 270px;
+    left: 300px;
+}
+
+#cardevent > button:nth-of-type(2) {
+    position: absolute;
+    bottom: 270px;
+    right: 300px;
+}
+
+#container {
+    width: 870px;
+    height: 750px;
+    margin: auto;
+    position: relative;
+}
+
+#container > div > div:last-child > a {
+    display: inline-block;
+    text-decoration: none;
+    color: #141414;
+    padding: 0 5px 0 5px;
+    border-bottom: 1px solid #141414;
+    margin-bottom: 150px;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    background-color: #5f5a57;
+    border-radius: 40px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    margin-bottom: 100px;
+    position: relative;
+
+    color: #f5f5f5;
+    font-weight: 600;
+    font-size: 1.2em;
+
+    transition: transform 0.5s ease, top 0.5s ease, left 0.5s ease, right 0.5s ease;
+}
+
+.card::before {
+    content: "emart";
+    background-color: #5f5a57;
+    color: #f9f9f9;
+    padding: 5px 10px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    font-size: 1.2em;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.card::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.yellow {
+    color: #f5da52;
+}
+
+.big {
+    font-size: 5em;
+}
+
+.medium {
+    font-size: 1.8em;
+}
+
+.small {
+    font-size: 1.3em;
+}
+
+.large {
+    font-size: 2.5em;
+}
+
+/* 내용배치 */
+.card {
+    position: relative;
+}
+
+/* #card1 내용 배치 */
+#card1 > .card > span:nth-child(1) {
+    position: absolute;
+    top: 60px;
+    left: 130px;
+}
+
+#card1 > .card > span:nth-child(2) {
+    position: absolute;
+    top: 80px;
+    left: 60px;
+}
+
+#card1 > .card > span:nth-child(3) {
+    position: absolute;
+    top: 95px;
+    right: 70px;
+}
+
+#card1 > .card > span:nth-child(4) {
+    position: absolute;
+    bottom: 40px;
+    right: 70px;
+}
+
+
+/* #card2 내용 배치 */
+#card2 > .card > span:nth-child(1) {
+    position: absolute;
+    top: 70px;
+    left: 85px;
+}
+
+#card2 > .card > span:nth-child(2) {
+    position: absolute;
+    top: 85px;
+    right: 95px;
+}
+
+#card2 > .card > span:nth-child(3) {
+    position: absolute;
+    bottom: 50px;
+    right: 95px;
+}
+
+/* #card3 내용 배치 */
+#card3 > .card > span:nth-child(1) {
+    position: absolute;
+    top: 60px;
+    left: 130px;
+}
+
+#card3 > .card > span:nth-child(2) {
+    position: absolute;
+    top: 80px;
+    left: 70px;
+}
+
+#card3 > .card > span:nth-child(3) {
+    position: absolute;
+    top: 95px;
+    right: 90px;
+}
+
+#card3 > .card > span:nth-child(4) {
+    position: absolute;
+    bottom: 40px;
+    right: 70px;
+}
+
+/* #card4 내용 배치 */
+#card4 > .card > span:nth-child(1) {
+    position: absolute;
+    top: 85px;
+    left: 45px;
+}
+
+#card4 > .card > span:nth-child(2) {
+    position: absolute;
+    top: 85px;
+    right: 45px;
+}
+
+/* #card5 내용 배치 */
+#card5 > .card > span:nth-child(1) {
+    position: absolute;
+    top: 65px;
+    left: 100px;
+}
+
+#card5 > .card > span:nth-child(2) {
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+}
+
+/* 카드 위치 배치 */
+#container > div:nth-child(1) > .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: scale(0.7);
+    z-index: 1;
+}
+
+#container > div:nth-child(2) > .card {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+
+    transform: scale(0.8);
+    z-index: 2;
+}
+
+#container > div:nth-child(3) > .card {
+    position: absolute;
+    top: 110px;
+    left: 280px;
+
+    z-index: 3;
+}
+
+#container > div:nth-child(4) > .card {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+
+    transform: scale(0.8);
+    z-index: 2;
+}
+
+#container > div:nth-child(5) > .card {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transform: scale(0.7);
+    z-index: 1;
+}
+
+/* .info 배치 */
+.info {
+    width: 340px;
+    background-color: #f9f9f9;
+    position: absolute;
+    bottom: 0;
+    left: 260px;
+}
+
+.info > ul {
+    margin-bottom: 80px;
+}
+
+.info > ul > li {
+    line-height: 2em;
+}
+
+.info > ul > li > span {
+    font-weight: 600;
+}
+
+/* #container > div:nth-child(1) > .info , #container > div:nth-child(5) > .info {
+    z-index: 1;
+}
+
+#container > div:nth-child(2) > .info , #container > div:nth-child(4) > .info {
+    z-index: 2;
+}
+
+#container > div:nth-child(3) > .info {
+    z-index: 3;
+} */
+
+#card5 > .info > div {
+    margin-bottom: 80px;
+}
+
+#card5 > .info > div > span {
+    line-height: 2em;
+}
+
+#card5 > .info > div > span > span {
+    font-size: 1.2em;
+    font-weight: 600;
+    display: block;
+}
+
+
+/* cultureclub */
+#cultureclub {
+    width: 1200px;
+    margin: auto;
+    font-family: "Roboto", 'Pretendard-Regular', serif;
+    text-align: center;
+}
+
+#cultureclub > h2 {
+    display: inline-block;
+    color: #141414;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 60px 10px 10px 10px;
+    border-bottom: 1px solid #141414;
+}
+
+#cultureclub > p {
+    text-align: center;
+    padding: 10px;
+}
+
+#cultureclub > a > img {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px 0 50px 0;
+}
+
+#cultureclub > div > h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #141414;
+    padding: 15px 0 15px 30px;
+    text-align: left;
+}
+
+#cultureclub > div > ul {
+    padding: 50px 0 50px 100px;
+}
+
+#cultureclub > div > ul > li {
+    font-size: 1.1rem;
+    padding: 20px 0 5px 0;
+    border-bottom: 1px solid #141414;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cultureclub > div > ul > li > span {
+    display: inline-block;
+    background-color: #f7eec6;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+#cultureclub > div > ul > li > a {
+    text-decoration: none;
+    color: #141414;
+} 
+
+#cultureclub > div > a {
+    text-decoration: none;
+    color: #141414;
+    font-size: 1.2rem;
+    padding: 10px 5px 5px 5px;
+    border-bottom: 1px solid #141414;
+}
+
+/* link */
+#link {
+    width: 1200px;
+    margin: auto;
+    font-family: "Roboto", 'Pretendard-Regular', serif;
+}
+
+#link > ul {
+    display: flex;
+    padding: 100px 40px 70px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#link > ul li:not(:nth-child(3)) img {
+    border-radius: 50%;
+    filter: grayscale(100%);
+    display: block;
+    margin-bottom: 30px;
+  }
+
+#link > ul li:not(:nth-child(3)) img:hover {
+    filter: grayscale(0%);
+  }
+
+
+#link > ul li a {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color: #141414;
+}
+
+/* footer */
+#footer {
+    width: 1200px;
+    margin: auto;
+    padding: 15px;
+    line-height: 25px;
+    font-family: "Roboto", 'Pretendard-Regular', serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-self: baseline;
+}
+
+#footer > div > ul:first-child {
+    padding-bottom: 20px;
+}
+
+#footer > div > ul:nth-of-type(2) > li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#footer > div > ul:nth-of-type(2) > li > a {
+    text-decoration: none;
+    color: #141414;
+}
+
+#footer > ul:last-child {
+    text-align: right;
+    align-content: end;
+}
